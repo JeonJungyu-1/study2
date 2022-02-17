@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div>시작</div>
+
+    <ul>
+        <li>
+            <b>항목</b>            
+        </li>
+    </ul>
+
+    <div>끝</div> -->
+
+    <!-- <table id='table'>
+        <tr>
+            <td>일</td>
+            <td>이</td>
+        </tr>
+        <tr>
+            <td>삼</td>
+            <td>사</td>
+        </tr>
+    </table> -->
+
+    <!-- <div id="elem">
+        <div id="elem-content">Element</div>
+    </div>
+
+    <script>
+        // 변수 elem은 id가 'elem'인 요소를 참조합니다.
+        elem.style.background = 'red';
+        
+        // id가 elem-content인 요소는 중간에 하이픈(-)이 있기 때문에 변수 이름으로 쓸 수 없습니다.
+        // 이럴 땐 대괄호(`[...]`)를 사용해서 window['elem-content']로 접근하면 됩니다.
+    </script>
+
+
+    <script src='browserPrac.js'></script>
+    <script>
+        // for (let i = 0; i < document.body.childNodes.length; i++) {
+        //     console.log(document.body.childNodes[i]);
+        // }
+
+        // for (let node of document.body.childNodes) {
+        //     console.log(node);
+        // }
+        
+        // for (let elem of document.body.children) {
+        //     console.log(elem);
+        // }
+
+        // let td = table.rows[0].cells[1];
+        // td.style.backgroundColor = 'red';
+
+    </script> -->
+
+    <!-- <ul>
+        <li>1-1</li>
+        <li>1-2</li>
+    </ul>
+    <ul>
+        <li>2-1</li>
+        <li>2-2</li>
+    </ul>
+    <script>
+        let elements = document.querySelectorAll('ul > li:last-child');
+
+        for (let elem of elements) {
+            console.log(elem.innerHTML);
+        }
+    </script> -->
+
+    <!-- <a href="http://example.com/file.zip"></a>
+    <a href="http://ya.ru"></a>
+    <script>
+        for (let elem of document.body.children) {
+            if (elem.matches('a[href$="zip"]')) {
+                console.log('주어진 CSS 선택자와 일치하는 요소: ' + elem.href);
+            }
+        }
+    </script> -->
+
+    <!-- <h1>목차</h1>
+    <div class='contents'>
+        <ul class='book'>
+            <li class='chapter'>1장</li>
+            <li class='chapter'>2장</li>
+        </ul> 
+    </div>
+    <script>
+        let chapter = document.querySelector('.chapter');
+        console.log(chapter.closest('.book'));
+        console.log(chapter.closest('.contents'));
+        console.log(chapter.closest('h1'));
+    </script> -->
+
+    <form name="search">
+        <label>Search the site:
+          <input type="text" name="search">
+        </label>
+        <input type="submit" value="Search!">
+      </form>
+    
+      <hr>
+    
+      <form name="search-person">
+        Search the visitors:
+        <table id="age-table">
+          <tr>
+            <td>Age:</td>
+            <td id="age-list">
+              <label>
+                <input type="radio" name="age" value="young">less than 18</label>
+              <label>
+                <input type="radio" name="age" value="mature">18-50</label>
+              <label>
+                <input type="radio" name="age" value="senior">more than 50</label>
+            </td>
+          </tr>
+    
+          <tr>
+            <td>Additionally:</td>
+            <td>
+              <input type="text" name="info[0]">
+              <input type="text" name="info[1]">
+              <input type="text" name="info[2]">
+            </td>
+          </tr>
+    
+        </table>
+    
+        <input type="submit" value="Search!">
+      </form>
+      
+      <script>
+          let table = getElementById('age-table');
+
+          table.getElementsByTagName('label');
+          documnet.querySelectorAll('#age-table label');
+      </script>
+
+
+</body>
+</html>
